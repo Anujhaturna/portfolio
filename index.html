@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anuj Ingle - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0b1a2b;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      width: 100%;
+      background: linear-gradient(90deg, #2f6f73, #e86d5e);
+      color: white;
+      padding: 25px 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .header-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 90px;
+    }
+
+    .header-left {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .name {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 0.95rem;
+    }
+
+    .contact-info a {
+      color: #ffdddd;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      background-color: teal;
+      padding: 8px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover {
+      background-color: darkcyan;
+    }
+
+    /* ===== MAIN ===== */
+    .main-container {
+      max-width: 1200px;
+      margin: 50px auto 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0 20px;
+      align-items: center;
+    }
+
+    .about-section {
+      flex: 2;
+      min-width: 300px;
+      background: #1a2a44;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .about-section h2 {
+      font-size: 1.8rem;
+      color: #00ced1;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ff6f61;
+      padding-bottom: 5px;
+    }
+
+    .profile-container {
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 4px solid #ff6f61;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #1a2a44;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      color: #00ced1;
+      border-bottom: 2px solid #ff6f61;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    /* ===== FLEX CONTAINERS ===== */
+    .two-column {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .two-column > div {
+      flex: 1;
+      background: #13233b;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    /* ===== SKILLS ===== */
+    .skill {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .egg {
+      background-color: teal;
+      padding: 8px 20px;
+      border-radius: 25px;
+      color: white;
+      font-weight: bold;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
+
+    .egg:hover {
+      background-color: darkcyan;
+    }
+
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .main-container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-container">
+      <div class="header-left">
+        <div class="name">Anuj Ingle</div>
+        <div class="contact-info">
+          <div>📞 8080539453</div>
+          <div>📧 <a href="mailto:ingleanuj2002@gmail.com">ingleanuj2002@gmail.com</a></div>
+          <div>🔗 <a href="#">LinkedIn Profile</a></div>
+          <div>📍 Amravati, Maharashtra</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#soft-skills">Soft Skills</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT ===== -->
+  <div class="main-container" id="about">
+    <div class="about-section">
+      <h2>About Me</h2>
+      <p>
+        Aspiring Python Full Stack Developer passionate about building efficient, user-friendly web applications.
+        Skilled in Django, Flask, JavaScript, and databases. Developed production-ready projects with role-based dashboards,
+        authentication systems, and CRUD functionalities. Eager to learn, contribute to real-world solutions,
+        and thrive in team environments.
+      </p>
+    </div>
+    <div class="profile-container">
+      <img src="portfolio image.png" alt="Profile Image" class="profile-img">
+    </div>
+  </div>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <li>
+      <strong>1) Rx Rapid – Online Medicine Delivery</strong><br>
+      <strong>Tech Stack: HTML, CSS, JavaScript, Python Django, SQLite </strong>
+      <br>
+      <ul>
+        <br>
+        <li>Developed a web application for online medicine ordering with role-based dashboards for Admins, Medical Store, Managers, and Customers.</li>
+        <li>Features include secure email OTP authentication and manager-approved store registration.</li>
+        <li>Developed full order management and payment system using Django.</li>
+      </ul>
+    </li>
+    <br>
+
+    <li>
+
+      
+      <strong>2) Student Attendance Management System</strong><br>
+      <strong>Tech Stack: HTML, CSS, JavaScript, Python Django, SQLite </strong>
+      <ul>
+        <br>
+        <li>Developed a web-based Student Attendance Management System with role-based access for Admin, Principal, Teachers, and Students.</li>
+        <li>Key features include admin-approved registrations and simplified attendance tracking.</li>
+      </ul>
+    </li>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <h2> Technical Skills</h2>
+    <ul class="skill">
+      <li class="egg">HTML</li>
+      <li class="egg">CSS</li>
+      <li class="egg">JavaScript</li>
+      <li class="egg">Python</li>
+      <li class="egg">Django</li>
+      <li class="egg">Flask</li>
+      <li class="egg">SQL</li>
+      <li class="egg">PostgreSQL</li>
+      <li class="egg">SQLite</li>
+      <li class="egg">Git</li>
+      <li class="egg">GitHub</li>
+      <li class="egg">REST API</li>
+    </ul>
+  </section>
+
+  <!-- ===== EXPERIENCE & INTERNSHIP ===== -->
+  <section id="experience">
+    <h2>Experience & Internship</h2>
+    <div class="two-column">
+      <div>
+        <h3>Python Developer Intern</h3>
+        <p><strong>Company:</strong> JK Innovative Private Limited, Amravati<br>
+        <strong>Duration:</strong> 0 to 6 months</p>
+        <br>
+        <ol type="A">
+          <li>Assisted in backend development using Python and Django, implementing core application logic and APIs..</li>
+          <li>Fixed bugs and optimized existing code to improve performance and reliability.</li>
+          <li>Collaborated with frontend developers to integrate backend services with HTML, CSS, and JavaScript components.</li>
+          <li>Worked with mentors and senior developers to maintain high code quality and deliver user-friendly features.</li>
+        </ol>
+      </div>
+      <div>
+        <h3>Internship – E-Samarth Portal</h3>
+        <p><strong>Organization:</strong> Sant Gadge Baba Amravati University<br>
+        <strong>Duration:</strong> 1 month</p>
+        <ol type="1">
+          <br>
+          <li> Worked on a project focusing on the admission module.</li>
+          <li> Handled data entry, validation, and system functionality.</li>
+          <li> Gained exposure to government process flows.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION & SOFT SKILLS ===== -->
+  <section id="education">
+    <h2>Education, Certifications & Soft Skills</h2>
+    <div class="two-column">
+      <div>
+        <h3>Education</h3>
+        <ul>
+          <li><strong>MCA</strong> – Sant Gadge Baba Amravati University (2023–2025)</li>
+          <li><strong>B.Sc. (PCM)</strong> – Sant Gadge Baba Amravati University (2019–2022)</li>
+          <li><strong>HSC</strong> – Mahatma Fule College, Warud Dist. Amravati (2019)</li>
+        </ul>
+        <h3>Certifications</h3>
+        <ul>
+          <li>Python – Udemy</li>
+          <li>C – Unisys Infotech</li>
+          <li>C++ – Laksh IT Solution</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Soft Skills</h3>
+        <ul class="skill">
+          <li class="egg">Communication</li>
+          <li class="egg">Analytical Thinking</li>
+          <li class="egg">Problem Solving</li>
+          <li class="egg">Team Collaboration</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
